@@ -1,0 +1,10 @@
+---
+const { recipe } = Astro.props;
+const { title, description } = recipe.data;
+---
+
+<div class="recipe-card">
+  <h2>{title}</h2>
+  <p>{description}</p>
+  <a href={recipe.slug}>View Recipe</a>
+</div>
